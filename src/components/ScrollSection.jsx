@@ -1,6 +1,9 @@
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 const ScrollSection = ({ data, active }) => {
+    const navigate = useNavigate();
+
     return (
         <div className={`h-screen w-full sticky top-0 left-0 flex flex-col justify-center ${data.align === 'left' ? 'items-start' : data.align === 'right' ? 'items-end' : 'items-center'} pointer-events-none z-10 px-6 md:px-20`}>
             <motion.div
@@ -53,7 +56,7 @@ const ScrollSection = ({ data, active }) => {
                         animate={{ opacity: active ? 1 : 0 }}
                         transition={{ delay: 0.5 }}
                         className="mt-10 px-10 py-5 bg-blue-600 text-white rounded-full font-bold text-lg hover:bg-blue-700 transition-all duration-300 pointer-events-auto shadow-2xl hover:scale-105 border-2 border-white/10 will-change-transform"
-                        onClick={() => window.location.href = '/contact'}
+                        onClick={() => navigate('/contact')}
                     >
                         Get in Touch
                     </motion.button>

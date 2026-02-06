@@ -26,7 +26,7 @@ const Navbar = () => {
                 to="/"
                 className="text-2xl font-black tracking-tighter text-white pointer-events-auto cursor-pointer"
             >
-                PORTFOLIO<span className="text-blue-500">.</span>
+                BHARGAV VAGHELA<span className="text-blue-500">.</span>
             </Link>
 
             {/* Desktop Links */}
