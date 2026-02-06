@@ -97,7 +97,17 @@ const Home = () => {
                 </div>
             </div>
 
-            {/* Footer / Scroll hint could go here */}
+            {/* Scroll Hint - Only visible on first section */}
+            <div
+                className={`fixed bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 transition-opacity duration-500 z-50 pointer-events-none ${activeSection === 0 ? 'opacity-100' : 'opacity-0'}`}
+            >
+                <span className="text-xs uppercase tracking-[0.2em] text-gray-400 font-medium">Scroll to Explore</span>
+                <div className="w-6 h-10 border-2 border-gray-500 rounded-full flex justify-center p-1">
+                    <div className="w-1 h-3 bg-white rounded-full animate-scroll-bounce" />
+                </div>
+            </div>
+
+            {/* Footer / Scroll hint was here */}
         </div>
     );
 };

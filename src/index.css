@@ -168,3 +168,18 @@
 .stroke-text {
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
 }
+
+@keyframes scroll-bounce {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+}
+
+.animate-scroll-bounce {
+  animation: scroll-bounce 1.5s ease-in-out infinite;
+}
