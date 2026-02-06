@@ -1,0 +1,117 @@
+{
+    "personal": {
+        "name": "Bhargav Vaghela",
+        "tagline": "Aspiring Full Stack Developer | AI/ML Enthusiast | Creative Thinker",
+        "description": "I'm a passionate developer who loves building things that matter. I enjoy solving complex problems and learning new technologies.",
+        "techStack": [
+            "HTML",
+            "CSS",
+            "Bootstrap",
+            "Tailwind CSS",
+            "JavaScript",
+            "PHP",
+            "Python",
+            "Basic ML"
+        ]
+    },
+    "sections": {
+        "hobbies": {
+            "title": "Hobbies & Interests",
+            "items": [
+                "Photography",
+                "Travelling",
+                "Cricket"
+            ]
+        },
+        "startupIdeas": {
+            "title": "Projects",
+            "ideas": [
+                {
+                    "title": "CleanTrack",
+                    "subtitle": "An intelligent platform for real-time monitoring and smart decision-making",
+                    "coreCapabilities": [
+                        "Live sensor data visualization",
+                        "Real-time status updates & alerts",
+                        "Interactive analytics dashboards"
+                    ],
+                    "intelligenceLayer": [
+                        "Route optimization for field workers",
+                        "Waste classification using ML models",
+                        "Smart prioritization of tasks and locations"
+                    ],
+                    "stakeholders": [
+                        "Admin – system control, analytics & planning",
+                        "Worker – optimized routes and live task updates",
+                        "User – status visibility and system interaction"
+                    ],
+                    "systemFlow": "IoT Sensors → ThingSpeak (real-time data) / Firebase (simulation & user data) → Intelligence Layer → Dashboard",
+                    "techStack": [
+                        "React",
+                        "Node.js",
+                        "MongoDB",
+                        "Firebase",
+                        "ThingSpeak",
+                        "Machine Learning",
+                        "Real-time APIs"
+                    ]
+                },
+                {
+                    "title": "HeartGuard",
+                    "subtitle": "AI-powered health risk prediction with web-based interaction",
+                    "coreCapabilities": [
+                        "Web interface for entering patient health data",
+                        "ML model predicts heart attack risk level",
+                        "Clear and instant result display"
+                    ],
+                    "intelligenceLayer": [
+                        "Displays heart attack cautions",
+                        "Shows preventive care and lifestyle guidance",
+                        "Provides post-risk awareness information"
+                    ],
+                    "systemFlow": "User Input → React Web App → Flask / FastAPI (ML Backend) → Risk Prediction → Firebase (store user & result data) → Result & Guidance Display",
+                    "techStack": [
+                        "React",
+                        "Python",
+                        "Machine Learning",
+                        "Flask",
+                        "Firebase"
+                    ]
+                }
+            ]
+        },
+        "sloganSpectrum": {
+            "title": "Slogan Spectrum",
+            "quotes": [
+                {
+                    "text": "Our greatest ability as humans is not to change the world, but to change ourselves.",
+                    "author": "Mahatma Gandhi",
+                    "image": "/images/M_Gandhi.jpg"
+                },
+                {
+                    "text": "Anything that makes weak - physically, intellectually and spiritually, reject it as poison.",
+                    "author": "Swami Vivekananda",
+                    "image": "/images/S_Vivekananda.jpg"
+                },
+                {
+                    "text": "There is 1% Chance & Sometimes that chance is good enough.",
+                    "author": "Virat Kohli",
+                    "image": "/images/Kohli.jpg"
+                },
+                {
+                    "text": "Constantly think about how you could be doing things better ; keep questioning yourself.",
+                    "author": "Elon Musk",
+                    "image": "/images/Musk.jpeg"
+                }
+            ]
+        }
+    },
+    "contact": {
+        "web3forms_access_key": "74a286fa-a317-4253-86bd-75fa47b39045",
+        "email": "vaghelabhargav1010@gmail.com",
+        "socialLinks": {
+            "linkedin": "https://www.linkedin.com/in/bhargav-vaghela-664630319/",
+            "github": "https://github.com/BhargavVaghela10",
+            "instagram": "https://www.instagram.com/bhargav._.vaghela1845?igsh=MWlqcXY0Y3Z4ZnIyeA=="
+        }
+    }
+}
