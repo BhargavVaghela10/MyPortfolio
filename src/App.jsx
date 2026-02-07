@@ -8,6 +8,7 @@ import Hobbies from './components/Hobbies';
 import StartupIdeas from './components/StartupIdeas';
 import SloganSpectrum from './components/SloganSpectrum';
 import Contact from './components/Contact';
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   useEffect(() => {
