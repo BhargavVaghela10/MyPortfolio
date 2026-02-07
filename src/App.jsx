@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Lenis from 'lenis';
+import { Analytics } from '@vercel/analytics/react';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Hobbies from './components/Hobbies';
@@ -45,6 +46,7 @@ function App() {
           <Route path="/slogan-spectrum" element={<SloganSpectrum />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Analytics />
       </div>
     </Router>
   );
