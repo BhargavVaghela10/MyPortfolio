@@ -21,10 +21,32 @@ const Navbar = () => {
             transition={{ duration: 0.8, delay: 0.5 }}
             className={`fixed top-0 left-0 w-full z-[100] flex justify-between items-center px-8 py-8 md:px-12 pointer-events-none transition-colors duration-300 ${isOpen ? '' : 'mix-blend-difference'}`}
         >
-            {/* Logo */}
+            {/* Mobile Container */}
+            <div className="md:hidden w-full flex justify-between items-center border border-white/10 rounded-3xl p-4 bg-white/5 backdrop-blur-md pointer-events-auto">
+                {/* Mobile Logo */}
+                <Link
+                    to="/"
+                    className="text-xl font-black tracking-tighter text-white cursor-pointer"
+                >
+                    BHARGAV VAGHELA<span className="text-blue-500">.</span>
+                </Link>
+
+                {/* Mobile Menu Toggle Button */}
+                <div
+                    className="cursor-pointer text-white relative z-[101] bg-white/10 hover:bg-white/20 transition-all rounded-full p-2 flex items-center justify-center w-10 h-10"
+                    onClick={() => setIsOpen(!isOpen)}
+                >
+                    <div className="flex flex-col gap-1.5">
+                        <div className={`w-5 h-0.5 bg-current transition-all duration-300 ${isOpen ? 'rotate-45 translate-y-1' : ''}`}></div>
+                        <div className={`w-5 h-0.5 bg-current transition-all duration-300 ${isOpen ? '-rotate-45 -translate-y-1' : ''}`}></div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Desktop Logo */}
             <Link
                 to="/"
-                className="text-2xl font-black tracking-tighter text-white pointer-events-auto cursor-pointer"
+                className="hidden md:block text-2xl font-black tracking-tighter text-white pointer-events-auto cursor-pointer"
             >
                 BHARGAV VAGHELA<span className="text-blue-500">.</span>
             </Link>
@@ -52,14 +74,7 @@ const Navbar = () => {
                 })}
             </ul>
 
-            {/* Mobile Menu Toggle */}
-            <div
-                className="md:hidden pointer-events-auto cursor-pointer text-white relative z-[101]"
-                onClick={() => setIsOpen(!isOpen)}
-            >
-                <div className={`w-6 h-0.5 bg-current transition-all ${isOpen ? 'rotate-45 translate-y-1.5' : 'mb-1.5'}`}></div>
-                <div className={`w-6 h-0.5 bg-current transition-all ${isOpen ? '-rotate-45 -translate-y-[1px]' : ''}`}></div>
-            </div>
+
 
             {/* Mobile Menu Overlay */}
             {isOpen && (
