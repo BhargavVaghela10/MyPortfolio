@@ -5,7 +5,7 @@ const ScrollSection = ({ data, active }) => {
     const navigate = useNavigate();
 
     return (
-        <div className={`h-screen w-full sticky top-0 left-0 flex flex-col justify-center ${data.align === 'left' ? 'items-start' : data.align === 'right' ? 'items-end' : 'items-center'} pointer-events-none z-10 px-6 md:px-20`}>
+        <div className={`h-screen w-full sticky top-0 left-0 flex flex-col justify-center ${data.align === 'left' ? 'items-start' : data.align === 'right' ? 'items-end' : 'items-center'} pointer-events-none z-10 px-6 md:px-20 pt-28 md:pt-0`}>
             <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 animate={{

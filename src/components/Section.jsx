@@ -33,7 +33,7 @@ const Section = ({ id, title, children, className = '' }) => {
         <section
             id={id}
             ref={sectionRef}
-            className={`min-h-screen py-20 px-6 flex flex-col items-center justify-center ${className}`}
+            className={`min-h-screen pt-32 pb-20 md:py-20 px-6 flex flex-col items-center justify-center ${className}`}
         >
             <div
                 className={`max-w-7xl w-full transition-all duration-1000 ease-out transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
