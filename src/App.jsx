@@ -4,6 +4,7 @@ import Lenis from 'lenis';
 import { Analytics } from '@vercel/analytics/react';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
+import Skills from './components/Skills';
 import Hobbies from './components/Hobbies';
 import StartupIdeas from './components/StartupIdeas';
 import SloganSpectrum from './components/SloganSpectrum';
@@ -42,6 +43,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/skills" element={<Skills />} />
           <Route path="/hobbies" element={<Hobbies />} />
           <Route path="/projects" element={<StartupIdeas />} />
           <Route path="/slogan-spectrum" element={<SloganSpectrum />} />

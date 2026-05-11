@@ -37,8 +37,8 @@ const Home = () => {
         {
             id: 'skills',
             heading: "Tech Stack",
-            subheading: "I work with modern web and programming technologies to build complete end-to-end applications.",
-            techList: ["BOOTSTRAP", "REACT.JS", "PHP", "PYTHON"],
+            subheading: "I work with Data Science and AI/ML technologies to build intelligent solutions and models.",
+            techList: ["PYTHON", "PANDAS", "NUMPY", "SCIKIT-LEARN"],
             align: 'right'
         },
         {

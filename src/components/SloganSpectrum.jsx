@@ -12,8 +12,8 @@ const SloganSpectrum = () => {
             title={sloganSpectrum.title}
             subtitle="Words that Inspire"
         >
-            <div className="max-w-5xl mx-auto px-4 pt-10">
-                <div className="space-y-12">
+            <div className="max-w-6xl mx-auto px-4 pt-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {quotes.map((quote, index) => (
                         <motion.div
                             key={index}
@@ -21,36 +21,35 @@ const SloganSpectrum = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: index * 0.1 }}
-                            className={`flex flex-col md:flex-row items-center gap-10 p-8 md:p-12 rounded-[2.5rem] bg-white/5 backdrop-blur-md border border-white/10 relative group overflow-hidden ${index % 2 === 0 ? '' : 'md:flex-row-reverse'
-                                }`}
+                            className="flex flex-col items-center text-center gap-6 p-8 md:p-10 rounded-[2.5rem] bg-white/5 backdrop-blur-md border border-white/10 relative group overflow-hidden"
                         >
                             {/* Decorative Quote Icon */}
-                            <div className="absolute top-6 left-6 text-blue-500/20 text-8xl font-serif pointer-events-none group-hover:text-blue-500/30 transition-colors">
+                            <div className="absolute top-4 left-6 text-blue-500/20 text-7xl font-serif pointer-events-none group-hover:text-blue-500/30 transition-colors leading-none">
                                 "
                             </div>
 
                             {/* Author Image */}
                             {quote.image && (
                                 <div className="flex-shrink-0 relative">
-                                    <div className="w-32 h-32 md:w-48 md:h-48 rounded-full overflow-hidden border-2 border-white/20 group-hover:border-blue-400 group-hover:scale-105 transition-all duration-500 shadow-2xl">
+                                    <div className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-2 border-white/20 group-hover:border-blue-400 group-hover:scale-105 transition-all duration-500 shadow-xl">
                                         <img
                                             src={quote.image}
                                             alt={quote.author}
                                             className="w-full h-full object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-700"
                                         />
                                     </div>
-                                    <div className="absolute -bottom-2 -right-2 w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white scale-0 group-hover:scale-100 transition-transform duration-500 delay-100 shadow-lg shadow-blue-500/50">
+                                    <div className="absolute -bottom-1 -right-1 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white scale-0 group-hover:scale-100 transition-transform duration-500 delay-100 shadow-lg shadow-blue-500/50 text-sm">
                                         ✨
                                     </div>
                                 </div>
                             )}
 
                             {/* Quote Text */}
-                            <div className={`flex-1 text-center ${index % 2 === 0 ? 'md:text-left' : 'md:text-right'}`}>
-                                <p className="text-2xl md:text-3xl italic text-gray-100 mb-6 leading-relaxed font-light">
+                            <div className="flex flex-col flex-1 justify-between items-center w-full">
+                                <p className="text-lg md:text-xl italic text-gray-200 mb-6 leading-relaxed font-light flex-1">
                                     "{quote.text}"
                                 </p>
-                                <div className={`inline-block px-4 py-1 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 font-medium tracking-wider uppercase text-xs`}>
+                                <div className="inline-block px-4 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 font-medium tracking-wider uppercase text-[10px] md:text-xs">
                                     {quote.author}
                                 </div>
                             </div>

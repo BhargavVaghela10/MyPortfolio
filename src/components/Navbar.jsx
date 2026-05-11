@@ -8,6 +8,7 @@ const Navbar = () => {
 
     const navItems = [
         { name: 'Home', path: '/' },
+        { name: 'Skills', path: '/skills' },
         { name: 'Hobbies', path: '/hobbies' },
         { name: 'Projects', path: '/projects' },
         { name: 'Slogan Spectrum', path: '/slogan-spectrum' },
@@ -19,10 +20,10 @@ const Navbar = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className={`fixed top-0 left-0 w-full z-[100] flex justify-between items-center px-8 py-8 md:px-12 pointer-events-none transition-colors duration-300 ${isOpen ? '' : 'mix-blend-difference'}`}
+            className={`fixed top-0 left-0 w-full z-[100] flex justify-between items-center p-4 md:px-12 md:py-8 pointer-events-none transition-colors duration-300 ${isOpen ? '' : 'mix-blend-difference'}`}
         >
             {/* Mobile Container */}
-            <div className="md:hidden w-full flex justify-between items-center border border-white/10 rounded-3xl p-4 bg-white/5 backdrop-blur-md pointer-events-auto">
+            <div className="md:hidden w-full flex justify-between items-center border border-white/10 rounded-3xl p-3 px-5 bg-white/5 backdrop-blur-md pointer-events-auto">
                 {/* Mobile Logo */}
                 <Link
                     to="/"

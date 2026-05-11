@@ -5,7 +5,7 @@ const ScrollSection = ({ data, active }) => {
     const navigate = useNavigate();
 
     return (
-        <div className={`h-screen w-full sticky top-0 left-0 flex flex-col justify-center ${data.align === 'left' ? 'items-start' : data.align === 'right' ? 'items-end' : 'items-center'} pointer-events-none z-10 px-6 md:px-20 pt-28 md:pt-0`}>
+        <div className={`h-screen w-full sticky top-0 left-0 flex flex-col justify-center items-center ${data.align === 'left' ? 'md:items-start' : data.align === 'right' ? 'md:items-end' : ''} pointer-events-none z-10 px-6 md:px-20 pt-28 md:pt-0`}>
             <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 animate={{
@@ -14,10 +14,11 @@ const ScrollSection = ({ data, active }) => {
                     scale: active ? 1 : 0.95
                 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                className={`max-w-4xl w-full ${data.align === 'left' ? 'text-left items-start' :
-                    data.align === 'right' ? 'text-right items-end ml-auto' :
-                        'text-center items-center mx-auto'
-                    } flex flex-col`}
+                className={`max-w-4xl w-full flex flex-col text-center items-center mx-auto ${
+                    data.align === 'left' ? 'md:text-left md:items-start md:mx-0' :
+                    data.align === 'right' ? 'md:text-right md:items-end md:ml-auto md:mr-0' :
+                    ''
+                }`}
             >
                 <h2
                     className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight tracking-tight text-white will-change-transform"
@@ -38,7 +39,7 @@ const ScrollSection = ({ data, active }) => {
                 </p>
 
                 {data.techList && (
-                    <div className={`flex flex-wrap gap-3 mt-8 max-w-2xl will-change-transform ${data.align === 'right' ? 'justify-end' : data.align === 'left' ? 'justify-start' : 'justify-center'}`}>
+                    <div className={`flex flex-wrap gap-3 mt-8 max-w-2xl will-change-transform justify-center ${data.align === 'right' ? 'md:justify-end' : data.align === 'left' ? 'md:justify-start' : ''}`}>
                         {data.techList.map((tech, idx) => (
                             <span
                                 key={idx}
