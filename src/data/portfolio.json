@@ -1,7 +1,7 @@
 {
     "personal": {
         "name": "Bhargav Vaghela",
-        "tagline": "Aspiring Data Scientist | AI/ML Enthusiast | Front-End Development Basics | Problem Solver | Tech Enthusiast 🚀",
+        "tagline": "Aspiring AI/ML Developer | Data Science Enthusiast | Front-End Development Basics | Problem Solver | Tech Enthusiast",
         "description": "I'm a passionate developer who loves building things that matter. I enjoy solving complex problems and learning new technologies.",
         "techStack": [
             "HTML",
@@ -12,6 +12,84 @@
             "PHP",
             "Python",
             "Basic ML"
+        ],
+        "education": [
+            {
+                "institution": "V.V.P. Engineering College, Rajkot",
+                "degree": "Bachelor of Engineering — Information Technology (I.T.)",
+                "duration": "2023 – 2027",
+                "score": "CPI: 8.38  |  CGPA: 8.26",
+                "icon": "🎓"
+            },
+            {
+                "institution": "School of Science, Khambhala (Rajkot)",
+                "degree": "Higher Secondary School (HSC)",
+                "duration": "2021 – 2023",
+                "score": "HSC Board: 92.41 PR",
+                "icon": "🏫"
+            },
+            {
+                "institution": "Swaminarayan Gurukul, Visavadar",
+                "degree": "Secondary School (SSC)",
+                "duration": "2009 – 2021",
+                "score": "SSC Board: 99.73 PR",
+                "icon": "📚"
+            }
+        ],
+        "experience": [
+            {
+                "role": "Grand Finalist — SIH 2025",
+                "company": "Smart India Hackathon (SIH)",
+                "duration": "2025",
+                "description": "Competed in the SIH Grand Finale 2024 — India's largest hackathon. Built an innovative IoT + AI-based Smart Waste Management system using ESP32, Firebase, and ML-powered waste classification.",
+                "badge": "🏆 Grand Finale"
+            },
+            {
+                "role": "36-Hour Hackathon Participant",
+                "company": "PU Digital Hackathon - 3rd Place Winner",
+                "duration": "2025",
+                "description": "Participated in a 36-hour continuous hackathon, collaborating intensively with a team to design and deliver a working product under tight constraints.",
+                "badge": "⚡ 36-Hour Sprint"
+            },
+            {
+                "role": "36-Hour Hackathon Participant",
+                "company": "PU Offline Hackathon",
+                "duration": "2025",
+                "description": "Third hackathon experience — further sharpened problem-solving, rapid prototyping, and team collaboration skills in a competitive environment.",
+                "badge": "⚡ 36-Hour Sprint"
+            }
+        ],
+        "currentlyBuilding": [
+            {
+                "title": "LangGraph AI Agent",
+                "description": "ReAct agent with Tavily search & conversation memory using LangChain + LangGraph.",
+                "tech": [
+                    "LangGraph",
+                    "LangChain",
+                    "Python",
+                    "LLM"
+                ]
+            },
+            {
+                "title": "Data Science Projects",
+                "description": "Hands-on ML projects using real datasets for classification, regression, and NLP.",
+                "tech": [
+                    "Python",
+                    "Pandas",
+                    "Scikit-learn",
+                    "NLP"
+                ]
+            },
+            {
+                "title": "Portfolio v3",
+                "description": "This very portfolio — continuously refining the design and adding new experiences.",
+                "tech": [
+                    "React",
+                    "Vite",
+                    "Tailwind CSS",
+                    "Framer Motion"
+                ]
+            }
         ]
     },
     "sections": {
@@ -27,37 +105,9 @@
             "title": "Projects",
             "ideas": [
                 {
-                    "title": "CleanTrack",
-                    "subtitle": "An intelligent platform for real-time monitoring and smart decision-making",
-                    "coreCapabilities": [
-                        "Live sensor data visualization",
-                        "Real-time status updates & alerts",
-                        "Interactive analytics dashboards"
-                    ],
-                    "intelligenceLayer": [
-                        "Route optimization for field workers",
-                        "Waste classification using ML models",
-                        "Smart prioritization of tasks and locations"
-                    ],
-                    "stakeholders": [
-                        "Admin – system control, analytics & planning",
-                        "Worker – optimized routes and live task updates",
-                        "User – status visibility and system interaction"
-                    ],
-                    "systemFlow": "IoT Sensors → ThingSpeak (real-time data) / Firebase (simulation & user data) → Intelligence Layer → Dashboard",
-                    "techStack": [
-                        "React",
-                        "Node.js",
-                        "MongoDB",
-                        "Firebase",
-                        "ThingSpeak",
-                        "Machine Learning",
-                        "Real-time APIs"
-                    ]
-                },
-                {
-                    "title": "HeartGuard",
+                    "title": "Heart Attack Prediction",
                     "subtitle": "AI-powered health risk prediction with web-based interaction",
+                    "description": "A machine learning powered web app that predicts heart attack risk from patient health data. Provides clear risk assessment, preventive care guidance, and lifestyle recommendations based on the prediction results.",
                     "coreCapabilities": [
                         "Web interface for entering patient health data",
                         "ML model predicts heart attack risk level",
@@ -75,7 +125,57 @@
                         "Machine Learning",
                         "Flask",
                         "Firebase"
-                    ]
+                    ],
+                    "github": null
+                },
+                {
+                    "title": "SocialSense AI",
+                    "subtitle": "AI-powered social media sentiment analysis platform",
+                    "description": "An AI-powered social media sentiment analysis platform that analyzes user opinions using machine learning and NLP techniques. It provides interactive visualizations, sentiment classification, analytics dashboards, and real-time insights for understanding public opinion.",
+                    "coreCapabilities": [
+                        "Sentiment classification using NLP & ML models",
+                        "Interactive analytics dashboards",
+                        "Real-time public opinion insights"
+                    ],
+                    "intelligenceLayer": [
+                        "NLP-based opinion mining",
+                        "Sentiment trend visualizations",
+                        "Multi-platform data analysis"
+                    ],
+                    "systemFlow": "Social Media Data → NLP Pipeline → Sentiment Classifier → Analytics Dashboard → Insights Display",
+                    "techStack": [
+                        "Python",
+                        "NLP",
+                        "Machine Learning",
+                        "Scikit-learn",
+                        "React",
+                        "Data Visualization"
+                    ],
+                    "github": "https://github.com/BhargavVaghela10/SocialSense-AI"
+                },
+                {
+                    "title": "PixelFlow AI",
+                    "subtitle": "Telegram Image Generator – AI-powered image generation bot",
+                    "description": "An AI-powered Telegram bot that generates images from text prompts. Built using n8n automation workflows, Telegram Bot API, and AI image generation models. Includes prompt enhancement, regeneration, history, and automation features.",
+                    "coreCapabilities": [
+                        "Text-to-image generation via Telegram",
+                        "Prompt enhancement and regeneration",
+                        "Image history and automation features"
+                    ],
+                    "intelligenceLayer": [
+                        "AI image generation models",
+                        "n8n workflow automation engine",
+                        "Intelligent prompt refinement"
+                    ],
+                    "systemFlow": "Telegram User → Bot API → n8n Workflow → AI Image Model → Generated Image → Telegram Delivery",
+                    "techStack": [
+                        "n8n",
+                        "Telegram Bot API",
+                        "AI Image Generation",
+                        "Workflow Automation",
+                        "Python"
+                    ],
+                    "github": "https://github.com/BhargavVaghela10/PixelFlow-AI-Telegram-Image-Generator"
                 }
             ]
         },
@@ -93,7 +193,7 @@
                     "image": "/images/S_Vivekananda.jpg"
                 },
                 {
-                    "text": "There is 1% Chance & Sometimes that chance is good enough.",
+                    "text": "If There is 1% Chance ; Sometimes that chance is good enough.",
                     "author": "Virat Kohli",
                     "image": "/images/Kohli.jpg"
                 },

@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import Section from './Section';
 
 const skillsList = [
-    "C", "JAVA", "HTML5", "CSS3", "JAVASCRIPT", "PHP", "PYTHON", "GOOGLECLOUD", "FIREBASE", "VERCEL", "BOOTSTRAP", "TAILWINDCSS", "REACT", "MYSQL", "MONGODB", "NUMPY", "PANDAS", "SCIKIT-LEARN", "GIT", "GITHUB"
+    "C", "JAVA", "HTML5", "CSS3", "JAVASCRIPT", "PYTHON", "GOOGLECLOUD", "FIREBASE", "VERCEL", "BOOTSTRAP", "TAILWINDCSS", "MYSQL", "MONGODB", "NUMPY", "PANDAS", "SCIKIT-LEARN", "LLM", "LANGCHAIN", "LANGGRAPH", "RAG-BASICS", "GIT", "GITHUB"
 ];
 
 const Skills = () => {
